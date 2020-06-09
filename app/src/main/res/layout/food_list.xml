@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="140dp"
+    android:layout_height="150dp"
+    android:layout_margin="5dp"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="4dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/food_list"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/comfortaa"
+            android:textColor="@color/design_default_color_error"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item_amount"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/item_name"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/comfortaa"
+            android:textColor="#1280FF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/name_text_input3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_name"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toEndOf="@+id/item_amount"
+            android:fontFamily="@font/comfortaa"
+            android:text="@string/left"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/name_text_input"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/item_amount"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="22dp"
+            android:layout_toEndOf="@+id/del"
+            android:fontFamily="@font/comfortaa"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/name_text_input3"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="17dp"
+            android:layout_toEndOf="@+id/name_text_input"
+            android:background="@drawable/add" />
+
+        <Button
+            android:id="@+id/del"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/name_text_input3"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/remove" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
